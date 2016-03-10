@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movies</title>
+  </head>
+  <body>
+    <h1>Movies!</h1>
+      <% @movies.each do |movie| %>
+        <li><a href="/movies/<%= movie["id"] %>"><%= movie["title"] %></a> |       <strong>Year:</strong> <%= movie["year"] %> |
+        <strong>Genre:</strong> <%= movie["genre"] %> |
+        <strong>Rating:</strong> <%= movie["rating"] %>
+        <strong>Studio:</strong> <%= movie["studio"] %></li>
+      <% end %>
+  </body>
+</html>

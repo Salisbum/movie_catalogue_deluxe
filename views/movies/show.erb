@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @movie_data["title"] %></title>
+  </head>
+  <body>
+    <h1><%= @movie_data["title"] %></h1>
+    <h2>Movie Info</h2>
+    <p>
+      <strong>Year:</strong> <%= @movie_data["year"] %><br>
+      <strong>Genre:</strong> <%= @movie_data["genre"] %><br>
+      <strong>Studio:</strong> <%= @movie_data["studio"] %><br>
+      <strong>Rating:</strong> <%= @movie_data["rating"] %><br>
+      <strong>Characters:</strong> <%= @movie_data["character"] %><br>
+      <strong>Actors:</strong> <a href="/actors/<%= @movie_data["actor_id"] %>"><%= @movie_data["actor"] %></a><br>
+    </p>
+  </body>
+</html>
