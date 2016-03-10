@@ -17,3 +17,7 @@ def db_connection
     connection.close
   end
 end
+
+get "/" do
+  erb :index
+end
