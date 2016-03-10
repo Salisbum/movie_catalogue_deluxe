@@ -68,16 +68,6 @@ get "/movies" do
 end
 
 get "/movies/:movie_id" do
-  # @movie_data = []
-  #
-  # db_connection do |conn|
-  #   @movie_data = conn.exec("SELECT movies.title, movies.year, movies.rating, genres.name AS genre, studios.name AS studio
-  #   FROM movies
-  #   LEFT JOIN genres ON movies.genre_id = genres.id
-  #   LEFT JOIN studios ON movies.studio_id = studios.id
-  #   WHERE movies.id = ($1)", [params["movie_id"]]).first
-  # end
-
   @movie_data = []
 
   db_connection do |conn|
